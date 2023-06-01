@@ -24,3 +24,4 @@ exports.validateCountry = (_reqBody) => {
     img:Joi.string().min(2).max(99).allow(null,"")
   })
   return schemaJoi.validate(_reqBody)
+}
